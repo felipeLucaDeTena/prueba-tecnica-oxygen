@@ -1,0 +1,28 @@
+.nav {
+    background-color: #c9c9f7;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+
+    &__logo {
+        margin: 0px 40px;
+        &__text {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #40407b;
+            position: absolute;
+            z-index: 1;
+            margin: 16px 20px 0 0;
+        }
+        &__background {
+            width: 8em;
+            position: relative;
+        }
+    }
+    &__title {
+        margin: 0 40px 0 auto;
+        color: white;
+        font-weight: 400;
+    }
+}
