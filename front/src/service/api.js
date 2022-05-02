@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const TASKS_API = 'http://localhost:3000/tasks/';
+const TASKS_API = 'http://localhost:3001/tasks/';
 
 export function getAll() {
     return axios.get(TASKS_API);
