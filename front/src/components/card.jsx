@@ -3,7 +3,7 @@ import { tagColors } from '../data/data';
 
 import '../styles/card.scss';
 
-function Card({ item, status, deleteTask, updateTask }) {
+function Card({ setButtonPopUp, item, status, deleteTask, updateTask }) {
     const [isEditing, setIsEditing] = useState(false);
 
     const toggleEditing = () => {
@@ -39,6 +39,7 @@ function Card({ item, status, deleteTask, updateTask }) {
                     >
                         edit
                     </button>
+
                     <button
                         className="delete__button"
                         type="button"

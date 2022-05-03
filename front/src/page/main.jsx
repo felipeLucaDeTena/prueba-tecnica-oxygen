@@ -7,6 +7,7 @@ import '../styles/main.scss';
 
 const Main = () => {
     const [items, setItems] = useState([]);
+    const [buttonPopUp, setButtonPopUp] = useState(false);
 
     useEffect(() => {
         api.getAll().then((resp) => {
@@ -23,7 +24,7 @@ const Main = () => {
 
     const deleteTask = (task) => {
         api.remove(task.id).then((resp) => {
-            if (resp.status === 200) {
+            if (resp.status === 202) {
                 setItems(items.filter((item) => item.id !== task.id));
             }
         });
